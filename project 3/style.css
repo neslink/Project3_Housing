@@ -49,3 +49,9 @@ body {
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
+.box{
+    width: 1600px;
+    height: 800px;
+    border: 1px solid black;
+    }

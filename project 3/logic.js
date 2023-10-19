@@ -13,6 +13,8 @@ let myMap = L.map("map", {
     fillOpacity: 0.3,
     weight: 1.5
   }
+  
+  
 
   var layerGroup = L.layerGroup().addTo(myMap);
   var slider = document.getElementById("myRange");

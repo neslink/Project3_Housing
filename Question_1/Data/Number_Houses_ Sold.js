@@ -1,4 +1,4 @@
-﻿[
+﻿let HomesSold = [
     {
         "RegionID": "102001",
         "SizeRank": "0",

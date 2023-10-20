@@ -1,4 +1,4 @@
-﻿[
+﻿let MortgageRate = [
     {
         "DATE": "2013-01-03",
         "30 YR FRM": "3.34"

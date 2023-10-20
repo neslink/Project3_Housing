@@ -1,5 +1,4 @@
-﻿[
-    {
+﻿let MedianPrice = [{
         "RegionID": "102001",
         "SizeRank": "0",
         "RegionName": "United States",

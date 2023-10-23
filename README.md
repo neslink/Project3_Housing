@@ -7,8 +7,13 @@
 ## Conclusion
 
 ## References
-https://plotly.com/javascript/
-https://regex101.com/
+[Housing Data] (https://www.zillow.com/research/data/)
+[Plotly Documentation] (https://plotly.com/javascript/)
+[](https://regex101.com/)
 
 
 ## Team Members
+[Chris Baker]
+[Dustin ]
+[Meredith]
+[Nestor]

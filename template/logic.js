@@ -11,7 +11,7 @@ for (let key in homeData) {
     }
 }
 
-let graph1 = {
+let trace1 = {
     x: homeDates,
     y: values,
     type: 'scatter',
@@ -22,9 +22,9 @@ let graph1 = {
     }
 };
 
-let data2 = [graph1];
+let data1 = [trace1];
 
-let layout2 = {
+let layout1 = {
     title: 'Homes Sold in the United States',
     xaxis: {
         title: 'Years',
@@ -46,7 +46,10 @@ let layout2 = {
     width: 700,  
     height: 330,  
 };
-Plotly.newPlot("soldline", data2, layout2);
+Plotly.newPlot("soldline", data1, layout1);
+
+
+
 
 
 // Mortgage Rate (2018-2023)
@@ -61,7 +64,7 @@ for (let entry of MortgageRate) {
     }
 }
 
-let graph2 = {
+let trace2 = {
     x: mortgagedates,
     y: mortgagesrates,
     type: 'scatter',
@@ -72,9 +75,9 @@ let graph2 = {
     }
 };
 
-let data3 = [graph2];
+let data2 = [trace2];
 
-let layout3 = {
+let layout2 = {
     title: 'Mortgage Rate - 30 Year Fixed (2018-2023)',
     xaxis: {
         title: 'Years',
@@ -97,7 +100,7 @@ let layout3 = {
     height: 340,  
 };
 
-Plotly.newPlot("fixedrate", data3, layout3);
+Plotly.newPlot("fixedrate", data2, layout2);
 
 
 
@@ -115,7 +118,7 @@ let daysInMonth = ["31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "
 
 let sales2022 = months.map((month, index) => parseFloat(usData[`2022-${month}-${daysInMonth[index]}`]));
 
-let trace = {
+let trace3 = {
     x: months.map(month => `2022-${month}`),
     y: sales2022,
     type: 'bar',
@@ -125,8 +128,8 @@ let trace = {
     }
 };
 
-let data1 = [trace];
-let layout1 = {
+let data3 = [trace3];
+let layout3 = {
     title: 'Homes Sold by Month',
     xaxis: {
         title: 'Months',
@@ -151,7 +154,7 @@ let layout1 = {
     bargap: 0.5
 };
 
-Plotly.newPlot("plot2", data1, layout1);
+Plotly.newPlot("soldmonthly", data3, layout3);
 
 
 
@@ -162,7 +165,7 @@ let years = ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "20
 let inflationRates = [1.5, 1.6, 0.1, 1.3, 2.1, 2.4, 1.8, 1.3, 4.7, 8.0, 4.1];
 let mortgageRates = [3.98, 4.17, 3.85, 3.65, 3.99, 4.54, 3.94, 3.11, 2.96, 5.34, 6.68];
 
-let trace1 = {
+let trace4 = {
     x: years,
     y: inflationRates,
     type: "scatter",
@@ -171,7 +174,7 @@ let trace1 = {
     line: {color: "rgba(55,128,191,0.7)"}
 };
 
-let trace2 = {
+let trace5 = {
     x: years,
     y: mortgageRates,
     type: "scatter",
@@ -180,8 +183,8 @@ let trace2 = {
     line: {color: "rgba(222,45,38,0.8)"}
 };
 
-let data = [trace1, trace2];
-let layout = {
+let data4 = [trace4, trace5];
+let layout4 = {
     title: "Inflation Rate vs Mortgage Rate",
     xaxis: {
         title: "Years"
@@ -203,5 +206,5 @@ let layout = {
     height: 350, 
     bargap: 0.5
 }
-Plotly.newPlot("inflationvsmortgage", data, layout);
+Plotly.newPlot("inflationvsmortgage", data4, layout4);
 

@@ -1,5 +1,4 @@
-// Creating the map object
-let myMap = L.map("map2", {
+let myMap2 = L.map("map2", {
     center: [34.813702929456198, -117.666466304851994],
     zoom: 7
   });
@@ -7,7 +6,7 @@ let myMap = L.map("map2", {
   // Adding the tile layer
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(myMap);
+  }).addTo(myMap2);
   
   // Use this link to get the GeoJSON data.
   let link = "https://gis-calema.opendata.arcgis.com/datasets/59d92c1bf84a438d83f78465dce02c61_0.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D";
@@ -39,7 +38,7 @@ let myMap = L.map("map2", {
                 })
             },
             click: function (event) {
-                myMap.fitBounds(event.target.getBounds());
+                myMap2.fitBounds(event.target.getBounds());
             }
         }); //this is a new layer.
         layer.bindPopup(
@@ -48,7 +47,7 @@ let myMap = L.map("map2", {
         );
     }
     
-}).addTo(myMap);
+}).addTo(myMap2);
   });
   
 

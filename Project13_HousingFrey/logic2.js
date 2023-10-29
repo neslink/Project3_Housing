@@ -46,13 +46,13 @@ let myMap = L.map("map", {
           Dec2022 = station["2022-12-31"]
           Jan2023 = station["2023-01-31"]
           Feb2023 = station["2023-02-28"]
-          //      Mar2023 = data[x]["2023-03-31"]
-          //      Apr2023 = data[x]["2023-04-30"]
-          //      May2023 = data[x]["2023-05-31"]
-          //      June2023 = data[x]["2023-06-30"]
-          //      July2023 = data[x]["2023-07-31"]
-          //      Aug2023 = data[x]["2023-08-31"]
-          //      Sep2023 = data[x]["2023-09-30"]
+          Mar2023 = station["2023-03-31"]
+          Apr2023 = station["2023-04-30"]
+          May2023 = station["2023-05-31"]
+          June2023 = station["2023-06-30"]
+          July2023 = station["2023-07-31"]
+          Aug2023 = station["2023-08-31"]
+          Sep2023 = station["2023-09-30"]
 
 let latDif = Math.abs(station.CountyLat - station.RegionLat)
 let lngDif = Math.abs(station.CountyLng - station.RegionLng)
@@ -86,7 +86,7 @@ let pinColor
           html: `<span style="${markerHtmlStyles}" />`
         })
  
-               let bikeMarker = L.marker([station.RegionLat, station.RegionLng],{icon: myIcon}).bindPopup("<h3>County: " +station.CountyName+  "<br></h3><h3>Region: " + station.RegionName+ "</h3><h3> House Values: <br> 2022-01-31: " +  Jan2022 +",</h3><h3> 2022-02-28: " + Feb2022 + "<br></h3><h3>" + Mar2022 + "<br></h3><h3>" + Apr2022+ "<br></h3><h3>" +May2022+ "<br></h3><h3>" +June2022+ "<br></h3><h3>" +July2022 + "</h3>")
+               let bikeMarker = L.marker([station.RegionLat, station.RegionLng],{icon: myIcon}).bindPopup("<h3>County: " +station.CountyName +  "<br></h3><h3>Region: " + station.RegionName + "</h3><h3> House Values: <br> 2022-01-31: " +  Jan2022 + "</h3><h3> 2022-02-28: " + Feb2022 + "<br></h3><h3> 2022-03-31: " + Mar2022 + "<br></h3><h3> 2022-04-30: " + Apr2022 + "<br></h3><h3>2022-05-31: " + May2022 + "<br></h3><h3>2922-06-30: " + June2022 + "<br></h3><h3>2022-07-31: " + July2022  + "<br></h3><h3>2022-08-31: " + Aug2022 + "<br></h3><h3>2022-09-30: " + Sep2022 + "<br></h3><h3>2022-10-31: " + Oct2022 + "<br></h3><h3>2022-11-30: " + Nov2022 + "<br></h3><h3>2022-12-31: " + Dec2022 + "<br></h3><h3>2023-01-31: " + Jan2023 + "<br></h3><h3>2023-02-28: " + Feb2023 + "<br></h3><h3>2023-03-31: " + Mar2023 + "<br></h3><h3>2023-04-30: " + Apr2023 + "<br></h3><h3>2023-05-31: " + May2023 + "<br></h3><h3>2923-06-30: " + June2023 + "<br></h3><h3>2023-07-31: " + July2023  + "<br></h3><h3>2023-08-31: " + Aug2023 + "<br></h3><h3>2023-09-30: " + Sep2023 + "</h3>")
 
           return bikeMarker;
         }

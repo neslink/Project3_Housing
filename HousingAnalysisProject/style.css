@@ -26,7 +26,7 @@ h1
 .graph-container {
     background: url(data/newbackground.jpg) no-repeat center center;
     background-size: cover;  
-    width: 725px; 
+    width: 850px; 
     height: 370px; 
     margin: 20px auto; 
     padding: 10px;  
@@ -112,13 +112,48 @@ body {
     }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+.box1{
+  width: 1600px;
+  height: 800px;
+  border: 1px solid black;
+  
+  margin:20px auto;
+  display: block;
+  width: 75%;
+  margin-bottom: 2px;
+  background: #29558f
+  }
 
-body {
-  padding: 0;
-  margin: 0;
-}
-#map3,
-body,
-html {
-  height: 100%;
-}
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #map3,
+  body,
+  html {
+    height: 100%;
+  }
+
+  .box2{
+    width: 1600px;
+    height: 800px;
+    border: 1px solid black;
+    
+    margin:20px auto;
+    display: block;
+    width: 75%;
+    margin-bottom: 2px;
+    background: #29558f
+    }
+  
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    
+    #map3,
+    body,
+    html {
+      height: 100%;
+    } 

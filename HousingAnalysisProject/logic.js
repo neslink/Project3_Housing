@@ -43,7 +43,7 @@ let layout1 = {
         pad: 4
     },
     bordercolor: 'transparent',
-    width: 700,  
+    width: 725,  
     height: 330,  
 };
 Plotly.newPlot("soldline", data1, layout1);
@@ -89,14 +89,14 @@ let layout2 = {
     plot_bgcolor: 'transparent',      
     paper_bgcolor: 'transparent',     
     margin: {                         
-        l: 50,
-        r: 40,
+        l: 100,
+        r: 0,
         b: 50,
         t: 80,
         pad: 4
     },
     bordercolor: 'transparent',
-    width: 700,  
+    width: 750,  
     height: 340,  
 };
 
@@ -142,16 +142,16 @@ let layout3 = {
     plot_bgcolor: 'transparent',      
     paper_bgcolor: 'transparent',     
     margin: {  
-        l: 75,
-        r: 20,
+        l: 100,
+        r: 0,
         b: 70,
         t: 80,
-        pad: 4
+        pad: 5
     },
     bordercolor: 'transparent',
-    width: 700,  
+    width: 750,  
     height: 350, 
-    bargap: 0.5
+    bargap: 0.4
 };
 
 Plotly.newPlot("soldmonthly", data3, layout3);
@@ -195,14 +195,14 @@ let layout4 = {
     plot_bgcolor: 'transparent',      
     paper_bgcolor: 'transparent',     
     margin: {  
-        l: 65,
-        r: 20,
+        l: 90,
+        r: 60,
         b: 55,
         t: 80,
         pad: 4
     },
     bordercolor: 'transparent',
-    width: 730,  
+    width: 800,  
     height: 350, 
     bargap: 0.5
 }

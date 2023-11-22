@@ -1,0 +1,113 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(data/neighborhood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.background
+{
+    text-align: center;
+    padding-top: 5vh; 
+}
+h1 
+{
+    margin: 0;
+    padding: 20px;
+    color: white;
+    border: 2px solid white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.graph-container {
+    background: url(data/newbackground.jpg) no-repeat center center;
+    background-size: cover;  
+    width: 725px; 
+    height: 370px; 
+    margin: 20px auto; 
+    padding: 10px;  
+}
+
+
+/* Dustin's css++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* Remove the default margin and padding from the body. */
+body {
+    padding: 10;
+    margin: 10;
+  }
+  
+  /* Set map, body, and html to 100% of the screen size. */
+  #map,
+  body,
+  html {
+    height: 80%;
+  }
+
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 50px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 50px; /* Set a specific slider handle width */
+    height: 50px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 50px; /* Set a specific slider handle width */
+    height: 50px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.box{
+    width: 1600px;
+    height: 800px;
+    border: 1px solid black;
+    
+    margin:20px auto;
+    display: block;
+    width: 75%;
+    margin-bottom: 2px;
+    background: #29558f
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    
+    #map,
+    body,
+    html {
+      height: 100%;
+    }
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

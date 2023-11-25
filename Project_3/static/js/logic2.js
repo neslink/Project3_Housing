@@ -26,8 +26,8 @@ let myMap = L.map("map", {
     layerGroup.clearLayers()
     
     // Getting our GeoJSON data
-    d3.json("data/States.json").then(function (data) {
-      d3.json("data/clean_state_house_pricing.json").then(function (states) {
+    d3.json("static/data/States.json").then(function (data) {
+      d3.json("static/data/clean_state_house_pricing.json").then(function (states) {
         L.geoJson(data, {
           style: function (feature) {
             return {

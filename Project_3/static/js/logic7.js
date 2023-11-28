@@ -18,8 +18,8 @@ let myMap3 = L.map("map3", {
   }
 }
   function createMarkers(features){ // response is the url
-
-          let bikeMarkers = []
+          
+    let bikeMarkers = []
       
             for (let x in features){
              let station = features[x]// station is an object that's inside the stations array
@@ -91,4 +91,4 @@ let pinColor
           return bikeMarker;
         }
 
-          d3.json("data/trueData.json").then(createMarkers)
+          d3.json("static/data/trueData.json").then(createMarkers)

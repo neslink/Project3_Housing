@@ -13,6 +13,9 @@ with open('static/data/California_County_Boundaries.geojson', 'r') as file:
 with open('static/data/States.json', 'r') as file:
     states_data = json.load(file)
 
+with open('static/data/trueData.json', 'r') as file:
+    true_data = json.load(file)
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -28,6 +31,10 @@ def get_county_boundaries():
 @app.route("/states")
 def get_states_data():
     return jsonify(states_data)
+
+@app.route("/true-data")
+def get_true_data():
+    return jsonify(true_data)
 
 @app.route("/inflation-rate")
 def get_inflation_rate():

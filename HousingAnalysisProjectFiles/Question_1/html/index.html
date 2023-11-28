@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Market</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Import Plotly Library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+<body>
+    <div class="background">
+        <h1>Housing Market Analysis</h1>
+        
+        <div class="graph-container">
+        <div id="soldline" style="width: 650px; margin: 20px auto;"></div>
+        </div>
+        
+        <div class="graph-container">
+        <div id="fixedrate" style="width: 650px; margin: 20 auto;"></div>
+        </div>    
+            
+        <div class="graph-container">
+        <div id="plot2" style="width: 650px; margin: 20 auto;"></div>
+        </div>
+
+        <div class="graph-container">
+        <div id="inflationvsmortgage" style="width: 650px; margin: 20 auto;"></div>
+        </div>
+
+    </div>
+    
+    
+    <!-- JSON Files -->
+    <script src="InflationRate.js"></script>
+    <script src="MedianPrice.js"></script>
+    <script src="MortgageRate.js"></script>
+    <script src="NumberHousesSold.js"></script>
+    
+
+
+    <script src="logic.js"></script>
+    
+</body>
+</html>
